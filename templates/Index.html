@@ -1,0 +1,326 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jan Mohammad</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <h1 class="text-center text-bold">
+            Welcome to My Webpage
+        </h1>
+    </body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Driven Health Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="{{url_for('static', filename='images/logo.png')}}" alt="Logo" class="w-10 h-10 rounded-full">
+                <h1 class="text-xl font-bold text-blue-600">HealthAI</h1>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-gray-700">
+                <a href="#features" class="hover:text-blue-600 transition duration-300">Features</a>
+                <a href="#how-it-works" class="hover:text-blue-600 transition duration-300">How It Works</a>
+                <a href="#testimonials" class="hover:text-blue-600 transition duration-300">Testimonials</a>
+                <a href="#contact" class="hover:text-blue-600 transition duration-300">HealthTips</a>
+                <a href="#contact" class="hover:text-blue-600 transition duration-300">Contact</a>
+
+            </nav>
+            <div class="space-x-4">
+                <button
+                    class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-300">Login</button>
+                <button
+                    class="px-4 py-2 bg-transparent border border-blue-600 text-blue-600 rounded hover:bg-blue-600 hover:text-white transition duration-300">Sign
+                    Up</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="bg-gradient-to-r from-blue-500 to-purple-500 text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 animate-fade-in-up">Your Personal Health Companion</h1>
+            <p class="text-lg md:text-xl mb-8 animate-fade-in-up delay-200">Get real-time health insights, personalized
+                tips, and expert guidance.</p>
+            <button
+                class="px-6 py-3 bg-white text-blue-600 font-bold rounded hover:bg-gray-100 transition duration-300 animate-fade-in-up delay-400">Get
+                Started</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-12 animate-fade-in-up">Key Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div
+                    class="p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-xl font-bold text-blue-600 mb-4">Symptom Checker</h3>
+                    <p class="text-gray-600">Analyze symptoms and get possible conditions with actionable advice.</p>
+                </div>
+                <div
+                    class="p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-xl font-bold text-blue-600 mb-4">AI Chatbot</h3>
+                    <p class="text-gray-600">Chat with our AI-powered assistant for instant health guidance.</p>
+                </div>
+                <div
+                    class="p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-xl font-bold text-blue-600 mb-4">Fitness Tracker</h3>
+                    <p class="text-gray-600">Track your daily activity, steps, and calories burned effortlessly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-12 animate-fade-in-up">How It Works</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div
+                    class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-xl font-bold text-blue-600 mb-4">Step 1</h3>
+                    <p class="text-gray-600">Input your symptoms or health concerns into the app.</p>
+                </div>
+                <div
+                    class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-xl font-bold text-blue-600 mb-4">Step 2</h3>
+                    <p class="text-gray-600">Our AI analyzes the data and provides insights instantly.</p>
+                </div>
+                <div
+                    class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-xl font-bold text-blue-600 mb-4">Step 3</h3>
+                    <p class="text-gray-600">Get actionable recommendations tailored to your needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Guide Section -->
+    <div class="max-w-6xl mx-auto my-10 p-6 bg-white shadow-xl rounded-lg">
+        <h2 class="text-center text-4xl font-bold text-blue-600 mb-6">Common Diseases & Prevention</h2>
+
+        <div class="carousel-container">
+            <div class="carousel" id="disease-carousel">
+
+                <!-- 1. Influenza -->
+                <div class="carousel-item p-6">
+                    <div class="bg-blue-100 shadow-md rounded-lg p-6 text-center">
+                        <img src="flu.jpg" alt="Influenza" class="mx-auto w-48 h-48 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold text-blue-700 mt-4">Influenza (Flu)</h3>
+                        <p class="text-gray-700"><strong>Symptoms:</strong> Fever, cough, sore throat, body aches.
+                        </p>
+                        <p class="text-gray-700"><strong>Prevention:</strong> Vaccination, hand washing, avoiding
+                            sick people.</p>
+                        <a href="#" class="mt-4 block bg-blue-600 text-white py-2 px-4 rounded">Consult Flu
+                            Specialist</a>
+                    </div>
+                </div>
+
+                <!-- 2. Diabetes -->
+                <div class="carousel-item p-6">
+                    <div class="bg-blue-100 shadow-md rounded-lg p-6 text-center">
+                        <img src="diabetes.jpg" alt="Diabetes" class="mx-auto w-48 h-48 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold text-blue-700 mt-4">Diabetes</h3>
+                        <p class="text-gray-700"><strong>Symptoms:</strong> Increased thirst, fatigue, frequent
+                            urination.</p>
+                        <p class="text-gray-700"><strong>Prevention:</strong> Healthy diet, exercise, monitor sugar
+                            levels.</p>
+                        <a href="#" class="mt-4 block bg-blue-600 text-white py-2 px-4 rounded">Consult Diabetes
+                            Expert</a>
+                    </div>
+                </div>
+
+                <!-- 3. Hypertension -->
+                <div class="carousel-item p-6">
+                    <div class="bg-blue-100 shadow-md rounded-lg p-6 text-center">
+                        <img src="hypertension.jpg" alt="Hypertension"
+                            class="mx-auto w-48 h-48 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold text-blue-700 mt-4">Hypertension</h3>
+                        <p class="text-gray-700"><strong>Symptoms:</strong> Headaches, dizziness, blurred vision.
+                        </p>
+                        <p class="text-gray-700"><strong>Prevention:</strong> Low-salt diet, regular exercise,
+                            stress management.</p>
+                        <a href="#" class="mt-4 block bg-blue-600 text-white py-2 px-4 rounded">Consult
+                            Cardiologist</a>
+                    </div>
+                </div>
+
+                <!-- 4. Asthma -->
+                <div class="carousel-item p-6">
+                    <div class="bg-blue-100 shadow-md rounded-lg p-6 text-center">
+                        <img src="asthma.jpg" alt="Asthma" class="mx-auto w-48 h-48 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold text-blue-700 mt-4">Asthma</h3>
+                        <p class="text-gray-700"><strong>Symptoms:</strong> Wheezing, shortness of breath, tight
+                            chest.</p>
+                        <p class="text-gray-700"><strong>Prevention:</strong> Avoid allergens, use inhalers, stay
+                            active.</p>
+                        <a href="#" class="mt-4 block bg-blue-600 text-white py-2 px-4 rounded">Consult
+                            Pulmonologist</a>
+                    </div>
+                </div>
+
+                <!-- 5. COVID-19 -->
+                <div class="carousel-item p-6">
+                    <div class="bg-blue-100 shadow-md rounded-lg p-6 text-center">
+                        <img src="covid.jpg" alt="COVID-19" class="mx-auto w-48 h-48 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold text-blue-700 mt-4">COVID-19</h3>
+                        <p class="text-gray-700"><strong>Symptoms:</strong> Fever, cough, loss of taste/smell.</p>
+                        <p class="text-gray-700"><strong>Prevention:</strong> Get vaccinated, wear masks, social
+                            distancing.</p>
+                        <a href="#" class="mt-4 block bg-blue-600 text-white py-2 px-4 rounded">Consult COVID
+                            Specialist</a>
+                    </div>
+                </div>
+
+                <!-- 6-10: Add More Diseases -->
+                <!-- Similar Cards for Tuberculosis, Malaria, Pneumonia, Migraine, Skin Allergies -->
+
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="absolute top-1/2 left-0 transform -translate-y-1/2">
+                <button onclick="prevSlide()" class="bg-blue-700 text-white px-4 py-2 rounded-l">‹</button>
+            </div>
+            <div class="absolute top-1/2 right-0 transform -translate-y-1/2">
+                <button onclick="nextSlide()" class="bg-blue-700 text-white px-4 py-2 rounded-r">›</button>
+            </div>
+        </div>
+    </div>
+
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-12 animate-fade-in-up">What Our Users Say</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div
+                        class="p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                        <p class="text-gray-600 italic">"I was amazed by how easy it was to use this AI health
+                            assistant! I simply described my symptoms using my voice, and it quickly provided useful
+                            insights. It feels like having a personal doctor available 24/7. Highly recommended!"</p>
+                        <p class="text-blue-600 font-bold mt-4">- Daksh Choudhary</p>
+                    </div>
+                    <div
+                        class="p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                        <p class="text-gray-600 italic">"I uploaded an image of my skin rash, and within seconds, the AI
+                            assistant gave me possible causes and advice. It saved me from unnecessary panic and helped
+                            me decide if I needed a doctor. Super convenient and accurate!"</p>
+                        <p class="text-blue-600 font-bold mt-4">- Ashwani Yadav, SDE</p>
+                    </div>
+                    <div
+                        class="p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                        <p class="text-gray-600 italic">"I love how this AI assistant understands both written and
+                            spoken descriptions! Whether I type or talk, it gives me quick and reliable health
+                            information. It’s like having a smart medical guide in my pocket!"</p>
+                        <p class="text-blue-600 font-bold mt-4">- Shivam Yadav</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gradient-to-r from-blue-500 to-purple-500 text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-8 animate-fade-in-up">Contact Us</h2>
+                <form class="max-w-md mx-auto" x-data="{ submitted: false }">
+                    <input type="text" placeholder="Your Name"
+                        class="w-full px-4 py-3 mb-4 rounded bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <input type="email" placeholder="Your Email"
+                        class="w-full px-4 py-3 mb-4 rounded bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <textarea placeholder="Your Message" rows="4"
+                        class="w-full px-4 py-3 mb-4 rounded bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    <button type="submit" @click.prevent="submitted = true"
+                        class="px-6 py-3 bg-white text-blue-600 font-bold rounded hover:bg-gray-100 transition duration-300">
+                        Send Message
+                    </button>
+                    <p x-show="submitted" class="mt-4 text-green-300">Thank you for reaching out! We'll get back to you
+                        soon.</p>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="bg-gray-800 text-white py-8">
+            <div class="container mx-auto px-6 text-center">
+                <p class="mb-4">&copy; 2023 HealthAI. All rights reserved.</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#" class="hover:text-blue-400 transition duration-300">Privacy Policy</a>
+                    <a href="#" class="hover:text-blue-400 transition duration-300">Terms of Service</a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Animations -->
+        <style>
+            .animate-fade-in-up {
+                opacity: 0;
+                transform: translateY(20px);
+                animation: fadeInUp 1s ease-out forwards;
+            }
+
+            @keyframes fadeInUp {
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            /* Custom Styles */
+            .carousel-container {
+                max-width: 1000px;
+                margin: auto;
+                overflow: hidden;
+                position: relative;
+            }
+
+            .carousel {
+                display: flex;
+                transition: transform 0.5s ease-in-out;
+            }
+
+            .carousel-item {
+                min-width: 100%;
+                box-sizing: border-box;
+            }
+        </style>
+
+        <script>
+            let currentIndex = 0;
+            const totalSlides = document.querySelectorAll("#disease-carousel > div").length;
+            const carousel = document.getElementById("disease-carousel");
+
+            function updateCarousel() {
+                const translateX = -currentIndex * 100 + "%";
+                carousel.style.transform = "translateX(" + translateX + ")";
+            }
+
+            function prevSlide() {
+                currentIndex = (currentIndex === 0) ? totalSlides - 1 : currentIndex - 1;
+                updateCarousel();
+            }
+
+            function nextSlide() {
+                currentIndex = (currentIndex === totalSlides - 1) ? 0 : currentIndex + 1;
+                updateCarousel();
+            }
+        </script>
+
+    </body>
+
+    </html>
