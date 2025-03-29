@@ -1,0 +1,93 @@
+<section id="health-tips">
+    <div class="carousel-container px-50 py-20 bg-white">
+        <h2 class="text-center text-3xl font-bold text-gray-800 mb-12 animate-fade-in-up">HealthTips</h2>
+        <div class="carousel" id="disease-carousel">
+            <div class="carousel-item p-6">
+                <div class="bg-gray-50 shadow-md rounded-lg p-6 text-center">
+                    <img src="{{url_for('static', filename='images/flu.jpg')}}" alt="Influenza"
+                        class="mx-auto w-48 h-48 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-blue-700 mt-4">Influenza (Flu)</h3>
+                    <p class="text-gray-700"><strong>Symptoms:</strong> Fever, cough, sore throat, body aches.
+                    </p>
+                    <p class="text-gray-700"><strong>Prevention:</strong> Vaccination, hand washing, avoiding
+                        sick people.</p>
+                    <a href="https://www.askapollo.com/diseases/influenza--flu-" target="_blank"
+                        rel="noopener noreferrer"
+                        class="mt-4 bg-blue-600 font-bold text-white py-2 px-4 rounded text-sm inline-flex">Consult
+                        Flu
+                        Specialist</a>
+                </div>
+            </div>
+
+            <div class="carousel-item p-6">
+                <div class="bg-gray-50 shadow-md rounded-lg p-6 text-center">
+                    <img src="{{url_for('static', filename='images/diabetes.jpg')}}" alt="Diabetes"
+                        class="mx-auto w-48 h-48 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-blue-700 mt-4">Diabetes</h3>
+                    <p class="text-gray-700"><strong>Symptoms:</strong> Increased thirst, fatigue, frequent
+                        urination.</p>
+                    <p class="text-gray-700"><strong>Prevention:</strong> Healthy diet, exercise, monitor sugar
+                        levels.</p>
+                    <a href="https://www.askapollo.com/physical-appointment/diabetologist" target="_blank"
+                        rel="noopener noreferrer"
+                        class="mt-4 bg-blue-600 font-bold text-white py-2 px-4 rounded text-sm inline-flex">Consult
+                        Diabetes
+                        Expert</a>
+                </div>
+            </div>
+
+            <div class="carousel-item p-6">
+                <div class="bg-gray-50 shadow-md rounded-lg p-6 text-center">
+                    <img src="{{url_for('static', filename='images/hypertension.jpg')}}" alt="Hypertension"
+                        class="mx-auto w-48 h-48 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-blue-700 mt-4">Hypertension</h3>
+                    <p class="text-gray-700"><strong>Symptoms:</strong> Headaches, dizziness, blurred vision.
+                    </p>
+                    <p class="text-gray-700"><strong>Prevention:</strong> Low-salt diet, regular exercise,
+                        stress management.</p>
+                    <a href="https://www.askapollo.com/diseases/high-blood-pressure--hypertension-" target="_blank"
+                        rel="noopener noreferrer"
+                        class="mt-4 bg-blue-600 font-bold text-white py-2 px-4 rounded text-sm inline-flex">Consult
+                        Cardiologist</a>
+                </div>
+            </div>
+
+            <div class="carousel-item p-6">
+                <div class="bg-gray-50 shadow-md rounded-lg p-6 text-center">
+                    <img src="{{url_for('static', filename='images/asthma.jpeg')}}" alt="Asthma"
+                        class="mx-auto w-48 h-48 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-blue-700 mt-4">Asthma</h3>
+                    <p class="text-gray-700"><strong>Symptoms:</strong> Wheezing, shortness of breath, tight
+                        chest.</p>
+                    <p class="text-gray-700"><strong>Prevention:</strong> Avoid allergens, use inhalers, stay
+                        active.</p>
+                    <a href="https://www.askapollo.com/diseases/asthma" target="_blank" rel="noopener noreferrer"
+                        class="mt-4 bg-blue-600 font-bold text-white py-2 px-4 rounded text-sm inline-flex">Consult
+                        Pulmonologist</a>
+                </div>
+            </div>
+
+            <div class="carousel-item p-6">
+                <div class="bg-gray-50 shadow-md rounded-lg p-6 text-center">
+                    <img src="{{url_for('static', filename='images/covid.jpg')}}" alt="COVID-19"
+                        class="mx-auto w-48 h-48 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-blue-700 mt-4">COVID-19</h3>
+                    <p class="text-gray-700"><strong>Symptoms:</strong> Fever, cough, loss of taste/smell.</p>
+                    <p class="text-gray-700"><strong>Prevention:</strong> Get vaccinated, wear masks, social
+                        distancing.</p>
+                    <a href="https://www.askapollo.com/diseases/coronavirus-disease" target="_blank"
+                        rel="noopener noreferrer"
+                        class="mt-4 bg-blue-600 font-bold text-white py-2 px-4 rounded text-sm inline-flex">Consult
+                        COVID
+                        Specialist</a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute top-1/2 left-0 transform -translate-y-1/2">
+            <button onclick="prevSlide()" class="bg-gray-300 font-bold text-white px-4 py-2 rounded-l">‹</button>
+        </div>
+        <div class="absolute top-1/2 right-0 transform -translate-y-1/2">
+            <button onclick="nextSlide()" class="bg-gray-300 font-bold text-white px-4 py-2 rounded-r">›</button>
+        </div>
+    </div>
+</section>
